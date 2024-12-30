@@ -3,6 +3,8 @@ const todolist = [];
 function Addtodo() {
     const inputelement = document.querySelector('.js-name-input');
     const name = inputelement.value;
-    console.log(name);
+    todolist.push(name);
+    console.log(todolist);
+    inputelement.value = '';
 }
 
