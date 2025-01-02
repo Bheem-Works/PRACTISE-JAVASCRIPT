@@ -81,7 +81,6 @@
 //     alert(`${x} is equal to ${y}`);
 // }
 
-
 // // prompt
 // let miso = prompt('my name is vim');
 // console.log(`miso ${x}`);
