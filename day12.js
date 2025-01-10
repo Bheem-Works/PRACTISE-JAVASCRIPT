@@ -22,15 +22,42 @@
 // formula: celcsius = (fahreneit-32 => *5/9
 //     convert to celcius(86) => 30
 
-function ctf (celcius){
-    let faherenheit = (celcius*9/5) + 32;
-    return faherenheit;
-}
-console.log(ctf(40));
+// function ctf (celcius){
+//     let faherenheit = (celcius*9/5) + 32;
+//     return faherenheit;
+// }
+// console.log(ctf(40));
 
 
-function rtf(range) {
-    let cib = (range*2+2) + 4;
-    return cib;
+// function rtf(range) {
+//     let cib = (range*2+2) + 4;
+//     return cib;
+// }
+//  console.log(rtf(1));
+
+
+// 7e. create a function converttemperature(degree,unit)' that takes a number and a unit('c'or 'f') and converts it into the otehr unit.
+// /convert tempreature (25,'c')
+
+function frh(lane) {
+    let tih = (lane-32) *5/9;
+    return tih;
 }
- console.log(rtf(1));
+
+console.log(frh(3));
+
+
+function ctv(meters) {
+    return meters/1000;
+}
+let meters = 10000;
+let kiloMeter = ctv(meters);
+console.log(kiloMeter); 
+
+
+function time(second) {
+    return second*60;
+}
+let second = 2;
+let dime = time(second);
+console.log(dime);

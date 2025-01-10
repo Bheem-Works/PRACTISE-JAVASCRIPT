@@ -35,5 +35,5 @@ function rks(rtr){
         km+=rtr[i]; //store the value of rtr[i] in km empty variable
     }
     return km;
-}
+w}
 console.log(rks('miso'));
