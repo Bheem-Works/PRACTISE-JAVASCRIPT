@@ -1,46 +1,66 @@
-function hello() {
-  console.log("hello my name is miso ");
-}
-hello();
+// // functions 
+//     function miso() {
+//         console.log('this is my program'); //value 
+//         console.log('my name is laxxy');
+//     }
 
-function name(xio) {
-  return `my name is ${xio}`;
-}
-name("miso");
+//     miso(); //function calling
 
-function num(a, b) {
-  return a * b;
-}
-console.log(num(2, 3));
+//     function miro() {
+//         return 'this is a return'; 
+//     }
+//     miro();
 
-const a = () => "name is marker";
-console.log(a());
 
-const j = (c, d) => {
-  return c + d;
-};
-console.log(j(7, 8));
+//     // argument 
+//     function misa(a,b) {
+//         return a*b;
+//     }
+//     console.log(misa(2,4));
 
-// argument : it works the pass the value between the code and the programs
+//     const a = () => 'my name is subscriber';
+//     console.log(a());
 
-let m = [1, 2, 3, 4];
-let n = [1, 2, 3, 4];
-console.log(m.concat(n));
-console.log(m.push(9));
-console.log(m.pop());
-console.log(m.unshift(7));
-console.log(m.shift());
-console.log(m.length);
-console.log(m.join(","));
+//     let b = (a,b) => {
+//         return a+b;
+//     }
+//     console.log(b(6,5));
 
-// loops in arrays methods
-let s = [1, 2, 3, 4, 5];
 
-for (let i = 1; i <= s.length; i++) {
-  if (s[i] == 2) {
-    console.log("The array value is 2");
-  }
-  console.log("good");
-}
+    // most basics things you chai try grnu hola
 
-// use function and make a odd even
+    // assginment function create and add your name and show it on console
+    // assignment create a return function and add the value by using arguments
+    // assignment create a function by using the shortcuts =() =>
+
+    // // arryas method
+    // let joe = [1,2,3,4,5];
+    // let jems = [6,7,8,9,10];
+    
+    // console.log(joe.pop());
+    // console.log(joe.push(9));
+    // console.log(joe.toString());
+    // console.log(joe.join(`:`));
+    // console.log(joe.join(`:`));
+    // console.log(joe.shift());
+    // console.log(joe.unshift());
+    // console.log(joe.slice(0,1));
+    // console.log(joe.concat(jems));
+    // console.log(joe.at());
+    // let d = [1,2,3,4,5];
+    // d.copyWithin(0,2);
+    // console.log(d);
+
+    // arrays flat
+    // const arrays = [[1,2],[3,4],[5,6]];
+    // const abi = arrays.flat();
+    // console.log(abi);
+
+    // // arrays splice 
+    // const qw = ['banana','mango','pineapple'];
+    // console.log(qw.splice(0,2,'onratechange','bariyo'));
+    // console.log(qw);
+    
+
+
+     
