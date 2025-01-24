@@ -1,0 +1,122 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom-projects</title>
+    <link rel="stylesheet" href="09-rock-paper-scissors.html" />
+    </head>
+    <body>
+    <p>Youtube subscribe button</p>
+    <button onclick="button()" id="demo1">Subscribe</button>
+    <br />
+    <br />
+    <br />
+    <p>Rock paper Scissors</p>
+    <a href="09-rock-paper-scissors.html">Click Here</a>
+
+    <p>Amazon shipping calculator</p>
+    <p>orders under $40=+ +$10 shipping</p>
+    <p>orders over $40 = FREE shipping</p>
+
+    <input type="text" placeholder="Cost of order" class="js-class" onkeydown="handleCostKey(event);"> 
+
+    <button onclick="calculateTotal()">Calculate</button>
+
+    <p id="calculate"></p>
+
+    <button onclick=" show()
+    ">Show Quantity</button>`
+
+    <button onclick="
+    updateCartQuantity(1);
+    ">Add to Cart</button>
+
+    <button onclick="
+    updateCartQuantity(2);
+    ">+2</button>
+
+    <button onclick="
+    updateCartQuantity(3);
+    ">+3</button>
+
+    <button onclick="
+    updateCartQuantity(4);
+    ">+4</button>
+
+    <button onclick="
+    updateCartQuantity(5);
+    ">+5</button>
+
+    <button onclick="
+    updateCartQuantity(-1);
+    ">Remove from cart</button>
+
+    <button onclick="
+    updateCartQuantity(-2);
+    ">-2</button>
+
+    <button onclick="
+    updateCartQuantity(-3);
+    ">-3</button>
+
+    <p id="demo"></p>
+
+    <button onclick="
+    cartQuantity = 0;
+    console.log('Cart was reset.');
+    console.log(`Cart quantity: ${cartQuantity}`);
+    ">Reset Cart</button>
+
+
+
+    <script>
+    let cartQuantity = 0;
+
+    function updateCartQuantity(change) {
+    if (cartQuantity + change > 10) {
+    alert('The cart is full');
+    return;
+    }
+
+    if (cartQuantity + change < 0) {
+    alert('Not enough items in the cart');
+    return;
+    }
+
+    cartQuantity += change;
+    document.getElementById('demo').innerText = cartQuantity;
+    }
+
+
+    function handleCostKey(event) {
+    if(event.key==='Enter') {
+    calculateTotal();
+    }
+    }
+
+
+    function calculateTotal() {
+    const inputElement = document.querySelector('.js-class');
+    let cost = Number(inputElement.value);
+
+    if(cost < 40) {
+    cost = cost + 10;
+    // console.log(cost)
+    }
+    document.querySelector('#calculate').innerHTML = `$${cost}`;
+    }
+
+
+
+    function button() {
+    const btn = document.querySelector("#demo1");
+    if (btn.innerText === "subscribe") {
+    btn.innerHTML = "subscribed";
+    } else {
+    btn.innerHTML = "subscribe";
+    }
+    }
+    </script>
+    </body>
+    </html>
