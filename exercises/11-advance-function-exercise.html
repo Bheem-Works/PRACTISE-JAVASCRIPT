@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advance-function-exercises</title>
+  </head>
+  <body>
+
+    <button class="js-button" onclick="misoBtn()">finish</button>
+    <button class="vim-button" onclick="vimBtn()">cart</button>
+
+<!-- <Script> 
+    // SCRIPT ONE 
+    // function misoBtn() {
+    // let button = document.querySelector(".miso-one");
+    // if (button.innerText === "finish") {
+    // button.innerText = "finished";
+    // } else {
+    // button.innerText = "finish";
+    // }
+    // }
+    
+    // <h4>Question 2 : run twice function</h4>
+    // repeating: it is a repeating functions .repeat();
+    // let miso = 'miso is sleeping';
+        // console.log(miso.repeat(4));
+
+        // <h4>Question 2 : create a function and repeat it twice</h4>
+        // function miso() {
+        //     console.log('miso is hungry');
+        // }
+        // miso();
+        // miso();
+        </Script> -->
+
+        <!-- <script>
+     function misoBtn() {
+        const button = document.querySelector('.js-button');
+        
+        button.innerHTML = 'Loading...';
+        setTimeout(function() {
+          button.innerHTML = 'Finished!';
+        }, 1000);
+      } -->
+            <script>
+     function vimBtn() {
+        let input = document.querySelector('.vim-button');
+        input.innerText = 'cart';
+        setTimeout(function () {
+            input.innerHTML = 'finished';
+        },2000);
+      }
+        </script>
+
+  </body>
+</html>
