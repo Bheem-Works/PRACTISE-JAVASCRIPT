@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="fetch.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="city"></h2>
+
+        <div class="search-div">
+            <input type="text" class="weatherCity" />
+            <button class="search-btn">search</button>
+          </div>
+          <div class="flexingData">
+            <div class="temp">
+              <img
+                src="waterdrop.png"
+                alt="temp icon"
+                style="width: 50px"
+              />
+              <h1 class="tempH1"></h1>
+            </div>
+            <div class="humid">
+              <img
+                src="globe-icon-256x256-jl9greib.png"
+                alt="humidity icon"
+                style="width: 50px"
+              />
+  
+              <h1 class="humidH1"></h1>
+            </div>
+            <div class="latitude">
+              <img
+                src="latitude.png"
+                alt="latitude icon"
+                style="width: 50px"
+              />
+              <h1 class="latitudeH1"></h1>
+            </div>
+            <div class="longitude">
+              <img
+                src="thermometer.png"
+                alt="longitude icon"
+                style="width: 50px"
+              />
+              <h1 class="longitudeH1"></h1>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    <script src="fetch3.js"></script>
+</body>
+</html>

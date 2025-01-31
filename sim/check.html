@@ -44,10 +44,6 @@ input:checked + .slider {
   background-color: #2196F3;
 }
 
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
-}
-
 input:checked + .slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
@@ -62,25 +58,27 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
-
-.conatiner{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
 </style>
 </head>
 <body>
 
 <h2>Toggle Switch</h2>
-<div class="container">
-  <label class="switch">
-    <input type="checkbox" checked>
-    <span class="slider round"></span>
-  </label>
-  
-</div>
+
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+
+<br><br>
+
+<button onclick="submitForm()">Submit</button>
+
+<script>
+function submitForm() {
+  const isChecked = document.querySelector('.switch input').checked;
+  alert('Switch is ' + (isChecked ? 'ON' : 'OFF'));
+}
+</script>
 
 </body>
-</html> 
+</html>

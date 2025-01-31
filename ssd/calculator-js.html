@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+</head>
+<body>
+    <h2>calculator simple one projects </h2>
+    <script>
+        let number1 = parseFloat(prompt('enter your first numbers'));
+        let operators = (prompt('enter operators (+, -, /, *,) '));
+        let number2 = parseFloat(prompt('enter your first numbers'));
+        
+        let result;
+
+        if(operators === '+') {
+            result = number1 + number2;
+        } else if (operators === '-') {
+            result = number1 - number2;
+        } else if (operators === '*') {
+            result = number1 * number2;
+        } else if(operators==='/') {
+            if(number2===0) {
+                result = 'the division is not allowed'
+            } else {
+                number1/number2;
+            }
+        }
+        else {
+            result= 'invalid operators';
+        }
+        document.write(`<h1>Result : ${number1} ${operators} ${number2}= ${result} </h1> `) 
+    </script>
+</body>
+</html>
