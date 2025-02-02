@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" class="vim" placeholder="enter miso" required>
+    <button id="miso">check</button>
+    <script>
+        const miso = document.querySelector('#miso').addEventListener('click',function () {
+            const text = document.querySelector('.vim').value;
+            if(text===''){
+                alert('please full the input');
+            } else {
+                alert('you are not miso!');
+            }
+        });
+    </script>
+</body>
+</html>
