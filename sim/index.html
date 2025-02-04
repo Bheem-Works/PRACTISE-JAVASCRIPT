@@ -6,15 +6,18 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="text" class="vim" placeholder="enter miso" required>
+    <input type="text" class="vim" placeholder="enter fname" required> <br> <br>
+    <input type="text" class="vimlast" placeholder="enter lname" required> <br> <br>
+    <lable>phone:</lable> <br>
+    <input type="text" placeholder="enter your numbers" id="num">
     <button id="miso">check</button>
     <script>
         const miso = document.querySelector('#miso').addEventListener('click',function () {
-            const text = document.querySelector('.vim').value;
-            if(text===''){
-                alert('please full the input');
+            const number = document.querySelector('#num').value;
+            if(number = 0,1,2,3,4,5,6,7,8,9){
+                alert('this will works');
             } else {
-                alert('you are not miso!');
+                alert("Please enter your numbers");
             }
         });
     </script>
