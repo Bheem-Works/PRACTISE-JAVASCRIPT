@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Example</title>
+  <style>
+    .vim {
+        display:none;
+    color:purple;
+    }
+  </style>
+<body>
+<button id="toggleBtn">Txt is here</button>    
+<p id="text">Hello name is vim</p>
+
+<script>
+    let btn = document.querySelector("#toggleBtn");
+    let text = document.querySelector("#text");
+
+    btn.addEventListener ("click",()=>{
+        text.classList.toggle("vim");
+    });
+</script>
+</body>
+</html>
